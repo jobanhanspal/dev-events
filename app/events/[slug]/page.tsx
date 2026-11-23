@@ -6,6 +6,7 @@ import Image from "next/image";
 import BookEvent from "@/components/BookEvent";
 import EventCard from "@/components/EventCard";
 import { getSimilarEventsBySlug } from "@/lib/actions/event.actions";
+import { cacheLife, cacheTag } from "next/cache";
 
 interface EventDetailsProps {
   params: Promise<{
@@ -40,6 +41,8 @@ const EventTags = ({tags}: {tags: string[]}) => (
 )
 
 const EventDetailsPage = async ({ params }: EventDetailsProps) => {
+  "use cache";
+  
   const { slug } = await params;
 
   try {

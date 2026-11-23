@@ -52,8 +52,8 @@ const Page = async () => {
       </p>
 
       <ExploreBtn />
-
-      <div className="mt-20 space-y-7">
+      
+      <div className="mt-20 space-y-7 scroll-mt-24" id="events">
         <h3>Featured Events</h3>
 
         <Suspense fallback={<p>Loading events...</p>}>
