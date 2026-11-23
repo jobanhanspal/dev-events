@@ -26,7 +26,7 @@ const EventCard = ({title, image, slug, location, date, time}: props) => {
             })
           }}
         >
-            <Image src={image} alt={title} width={410} height={300} className="poster" />
+            <img src={image} alt={title} width={410} height={300} className="poster" />
             <div className="flex flex-row gap-2">
                 <Image src="/icons/pin.svg" alt={location} height={14} width={14} />
                 <p>{location}</p>
