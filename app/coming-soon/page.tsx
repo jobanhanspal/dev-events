@@ -6,8 +6,8 @@ const page = () => {
       <div className="relative w-full max-w-3xl overflow-hidden rounded-3xl border border-white/10 bg-[#101010] px-6 py-10 text-center shadow-2xl sm:px-12">
 
         {/* Background decoration */}
-        <div className="absolute -top-32 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-blue-600/20 blur-[100px]" />
-        <div className="absolute -bottom-32 -right-20 h-72 w-72 rounded-full bg-blue-600/20 blur-[100px]" />
+        <div className="absolute -top-32 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-primary/20 blur-[100px]" />
+        <div className="absolute -bottom-32 -right-20 h-72 w-72 rounded-full bg-primary/20 blur-[100px]" />
 
         <div className="relative z-10">
 
