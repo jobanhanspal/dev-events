@@ -7,6 +7,7 @@ import BookEvent from "@/components/BookEvent";
 import EventCard from "@/components/EventCard";
 import { getSimilarEventsBySlug } from "@/lib/actions/event.actions";
 import { cacheLife, cacheTag } from "next/cache";
+import type { IEvent } from "@/database/event.model";
 
 interface EventDetailsProps {
   params: Promise<{
